@@ -3,8 +3,8 @@ import joblib
 import streamlit as st
 
 
-model_path = sentiments_model.pkl
-encoder_path = sentiments_encoder.pkl
+model_path = "sentiments_model.pkl"
+encoder_path = "sentiments_encoder.pkl"
 model = joblib.load(model_path)
 encoder = joblib.load(encoder_path)
 
@@ -52,4 +52,5 @@ if st.button("predict sentiment"):
 
 
     
+
 
